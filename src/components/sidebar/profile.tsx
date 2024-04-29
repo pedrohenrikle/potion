@@ -1,4 +1,5 @@
 import { User } from '@phosphor-icons/react'
+import { CircleUser } from 'lucide-react'
 
 export function Profile() {
   const isAuthenticated = true
@@ -16,12 +17,8 @@ export function Profile() {
 
   return (
     <button className="text-potion-50 flex mx-5 items-center gap-2 text-sm font-medium group">
-      <img
-        className="h-5 w-5 rounded-sm"
-        src="https://github.com/pedrohenrikle.png"
-        alt=""
-      />
-      Pedro Klein
+      <CircleUser className="h-5 w-5 rounded-sm" />
+      Usuário
     </button>
   )
 }
